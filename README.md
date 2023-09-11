@@ -10,7 +10,7 @@ git clone https://github.com/bensonbs/SQL_Docker
 cd SQL_Docker
 ```
 
-**Modify path to SQL_Docker**
+**Modify path to SQL_Docker in `docker-compose.yml`**
 ```yaml
     volumes:
       - PATH\TO\SQL_Docker\work:/home/jovyan/work
