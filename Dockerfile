@@ -8,7 +8,7 @@ WORKDIR /home/jovyan
 RUN git clone https://github.com/bensonbs/SQL_Docker
 
 # Change directory to the cloned repo
-WORKDIR /home/jovyan/SQL_Docker/work
+WORKDIR /home/jovyan/SQL_Docker
 
 # Run the install script
 RUN sh install.sh
