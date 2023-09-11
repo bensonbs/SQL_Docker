@@ -3,7 +3,7 @@ version: '3'
 services:
   jupyter_notebook:
     container_name: jupyter_notebook
-    image: jupyter/scipy-notebook:x86_64-0d324bc0b38c
+    image: sql-scipy-notebook
     ports:
       - "8888:8888"
       - "8501:8501"
