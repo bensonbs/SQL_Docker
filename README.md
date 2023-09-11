@@ -1,6 +1,6 @@
 # SQL_Docker
 
-### Step 1. Create compose
+### Step 1. build docker image and compose
 
 ```
 git clone https://github.com/bensonbs/SQL_Docker
@@ -8,6 +8,10 @@ git clone https://github.com/bensonbs/SQL_Docker
 
 ```
 cd SQL_Docker
+```
+
+```
+docker build -t sql-scipy-notebook .
 ```
 
 **Modify path to SQL_Docker in `docker-compose.yml`**
