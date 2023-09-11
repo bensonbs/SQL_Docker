@@ -42,9 +42,6 @@ GO
 ### Step 4. Into jupyter notenook
 
 - Go to `localhost:8888` (you can get token in jupyter_notebook docker logs)
-
-- Setup env `cd work` and run command `sudo sh install.sh`
-
 - Open `connect.ipynb` to test connect
 
 
