@@ -11,7 +11,8 @@ services:
       - GRANT_SUDO=yes
     user: root
     volumes:
-      - C:\Users\ZME\AI\temp\SQL_Docker\work:/home/jovyan/work
+      - ${SQL_DOCKER_PATH}\work:/home/jovyan/work
+
     stdin_open: true
     tty: true
 
