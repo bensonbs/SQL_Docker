@@ -14,10 +14,9 @@ cd SQL_Docker
 docker build -t sql-scipy-notebook .
 ```
 
-**Modify path to SQL_Docker in `docker-compose.yml`**
-```yaml
-    volumes:
-      - PATH\TO\SQL_Docker\work:/home/jovyan/work
+**Set path to SQL_Docker**
+```
+$env:SQL_DOCKER_PATH="PATH\TO\SQL_Docker"
 ```
 
 ```shell
