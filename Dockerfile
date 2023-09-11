@@ -2,17 +2,18 @@
 FROM jupyter/scipy-notebook:x86_64-0d324bc0b38c
 
 # Set working directory in the container
-WORKDIR /home/jovyan/work
+WORKDIR /home/jovyan
 
 # Clone the git repository
 RUN git clone https://github.com/bensonbs/SQL_Docker
 
 # Change directory to the cloned repo
-WORKDIR /home/jovyan/work/SQL_Docker/work
+WORKDIR /home/jovyan/SQL_Docker/work
 
 # Run the install script
 RUN sh install.sh
 
+WORKDIR /home/jovyan
 # Expose any necessary ports (e.g., for Jupyter)
 EXPOSE 8888
 

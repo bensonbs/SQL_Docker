@@ -11,7 +11,7 @@ services:
       - GRANT_SUDO=yes
     user: root
     volumes:
-      - ${SQL_DOCKER_PATH}\work:/home/jovyan/work
+      - .:/home/jovyan/work
 
     stdin_open: true
     tty: true
