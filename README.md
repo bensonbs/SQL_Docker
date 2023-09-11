@@ -36,7 +36,8 @@ docker exec -it mssql_container /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -
 
 ### Step 3. Into jupyter notenook
 
-- Go to `localhost:8888` (you can get token in `docker logs jupyter_notebook`)
+- Go to `localhost:8888` (you can get token in `docker logs jupyter_notebook` )
+  
 - Open `work/connect.ipynb` to test connect
 
 
