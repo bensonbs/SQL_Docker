@@ -18,12 +18,12 @@ docker build -t sql-scipy-notebook .
 docker compose up -d
 ```
 
-### Step 2. Into mssql container
+### Step 2. Into mssql container and Create data table
+
 ```shell
 docker exec -it mssql_container /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Aa123456
 ```
 
-### Step 3. Create data table
 ```SQL
 1> CREATE TABLE students (id INT IDENTITY(1,1) PRIMARY KEY, name TEXT NOT NULL, age INT);
 2> INSERT INTO students (name, age) VALUES ('Benson', 25);
@@ -34,7 +34,7 @@ docker exec -it mssql_container /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -
 
 **[CTRL + C] to exit**
 
-### Step 4. Into jupyter notenook
+### Step 3. Into jupyter notenook
 
 - Go to `localhost:8888` (you can get token in jupyter_notebook docker logs)
 - Open `work/connect.ipynb` to test connect
