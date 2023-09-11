@@ -25,11 +25,11 @@ docker exec -it mssql_container /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -
 
 ### Step 3. Create data table
 ```SQL
-CREATE TABLE students (id INT IDENTITY(1,1) PRIMARY KEY, name TEXT NOT NULL, age INT);
-INSERT INTO students (name, age) VALUES ('Benson', 25);
-ALTER TABLE students ADD entry_timestamp datetime;
-INSERT INTO students (name, age, entry_timestamp) VALUES ('Benson', 25, GETDATE());
-GO
+1> CREATE TABLE students (id INT IDENTITY(1,1) PRIMARY KEY, name TEXT NOT NULL, age INT);
+2> INSERT INTO students (name, age) VALUES ('Benson', 25);
+3> ALTER TABLE students ADD entry_timestamp datetime;
+4> INSERT INTO students (name, age, entry_timestamp) VALUES ('Benson', 25, GETDATE());
+5> GO
 ```
 
 **[CTRL + C] to exit**
