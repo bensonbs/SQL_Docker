@@ -37,7 +37,7 @@ GO
 ### Step 4. Into jupyter notenook
 
 - Go to `localhost:8888` (you can get token in jupyter_notebook docker logs)
-- Open `connect.ipynb` to test connect
+- Open `work/connect.ipynb` to test connect
 
 
 
