@@ -11,7 +11,7 @@ RUN git clone https://github.com/bensonbs/SQL_Docker
 WORKDIR /home/jovyan/SQL_Docker
 
 # Run the install script
-RUN sh install.sh
+RUN sh /home/jovyan/SQL_Docker/install.sh
 
 WORKDIR /home/jovyan
 # Expose any necessary ports (e.g., for Jupyter)
