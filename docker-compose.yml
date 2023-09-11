@@ -3,7 +3,7 @@ version: '3'
 services:
   jupyter_notebook:
     container_name: jupyter_notebook
-    image: jupyter/scipy-notebook:latest
+    image: jupyter/scipy-notebook:x86_64-0d324bc0b38c
     ports:
       - "8888:8888"
       - "8501:8501"
@@ -11,7 +11,7 @@ services:
       - GRANT_SUDO=yes
     user: root
     volumes:
-      - C:\Users\ZME\AI\SQL_Docker\work:/home/jovyan/work
+      - C:\Users\ZME\AI\temp\SQL_Docker\work:/home/jovyan/work
     stdin_open: true
     tty: true
 

@@ -1,0 +1,6 @@
+$tagName = "sha256:967005d53443cca5130488dc2031e56e1d81f22a67bb754a1e4aa5d6142c10f4"
+$headers = @{
+    "Authorization" = "Bearer $token"
+}
+$response = Invoke-RestMethod -Uri "https://registry-1.docker.io/v2/$repoName/manifests/$tagName" -Headers $headers
+$digest = $response.config.digest
