@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  jupyter_notebook:
+    container_name: jupyter_notebook
+    image: jupyter/scipy-notebook:latest
+    ports:
+      - "8888:8888"
+      - "8501:8501"
+    environment:
+      - GRANT_SUDO=yes
+    user: root
+    volumes:
+      - C:\Users\ZME\AI\SQL_Docker\work:/home/jovyan/work
+    stdin_open: true
+    tty: true
+
+
+  sql_server:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: mssql_container
+    ports:
+      - "1433:1433"
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Aa123456
+    volumes:
+      - mssql_data:/var/opt/mssql
+
+volumes:
+  mssql_data:
