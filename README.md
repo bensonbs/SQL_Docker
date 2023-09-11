@@ -14,11 +14,6 @@ cd SQL_Docker
 docker build -t sql-scipy-notebook .
 ```
 
-**Set path to SQL_Docker**
-```
-$env:SQL_DOCKER_PATH="PATH\TO\SQL_Docker"
-```
-
 ```shell
 docker compose up -d
 ```
